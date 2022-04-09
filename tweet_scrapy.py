@@ -18,8 +18,9 @@ def getDates():
 
 def setDir():
     dirname = os.getcwd()
+    if not os.path.exists(dirname+'\\data'):
+        os.mkdir(dirname+'\\data')
     filename = os.path.join(dirname+'\\data', target)
-    
     if not os.path.exists(filename):
         os.mkdir(filename)
         
