@@ -1,6 +1,6 @@
 echo -n "Download all package you need (y/n) " 
 read choice 
-source tweet-venv/Scripts/activate
+# source tweet-venv/Scripts/activate
 if [ $choice = "y" ]
 then
     pip install -r requirements.txt
